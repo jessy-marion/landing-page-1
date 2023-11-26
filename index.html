@@ -11,17 +11,39 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <header class="shadow-md h-20 flex items-center justify-between mb-8">
+    <header
+      class="sticky bg-white top-0 right-0 shadow-md h-20 w-auto flex items-center justify-between mb-8"
+    >
       <img class="h-12 w-12 ml-4" src="./src/assets/img/logo.png" alt="logo" />
+      <ul
+        class="menu flex flex-col items-center justify-start gap-4 text-xl font-bold"
+      >
+        <li><a class="menuItem" href="#accueil">Accueil</a></li>
+        <li><a class="menuItem" href="#informations">Informations</a></li>
+        <li><a class="menuItem" href="#prix">Tarifs</a></li>
+        <li>
+          <button
+            class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2 begin-button-hover-effect"
+          >
+            <a class="menuItem" href="#">Log in</a>
+          </button>
+        </li>
+      </ul>
       <img
-        class="h-12 w-12 mr-4 cursor-pointer"
+        class="h-12 w-12 mr-4 cursor-pointer menuIcon"
         src="./src/assets/img/menu.png"
         alt="menu"
+      />
+      <img
+        class="h-auto w-16 mr-4 cursor-pointer closeIcon"
+        src="./src//assets/img/Close.png"
+        alt="close"
       />
     </header>
     <main>
       <section
-        class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh]"
+        id="accueil"
+        class="flex flex-col items-center justify-center mt-20 p-8 md:p-16 lg:p-44 lg:h-[90vh]"
       >
         <h1 class="font-bold text-xl text-center mb-5 md:text-3xl">
           Une application innovante <br />
@@ -87,7 +109,7 @@
         </div>
       </section>
 
-      <section class="lg:px-52 lg:py-12">
+      <section id="informations" class="lg:px-52 lg:py-12">
         <div
           class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row lg:p-0"
         >
@@ -154,6 +176,7 @@
       </section>
 
       <section
+        id="prix"
         class="flex flex-col items-center justify-center p-4 mb-8 md:p-16 lg:h-[100vh]"
       >
         <h3 class="text-2xl font-bold mb-4 md:text-3xl">Prix</h3>

@@ -1,3 +1,31 @@
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menuItem');
+const menuIcon = document.querySelector('.menuIcon');
+const closeIcon = document.querySelector('.closeIcon');
+ 
+
+function toggleMenu() {
+    if (menu.classList.contains('showMenu')) {
+        menu.classList.remove('showMenu');
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add('showMenu');
+        closeIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
+}
+
+menuIcon.addEventListener('click', toggleMenu);
+closeIcon.addEventListener('click', toggleMenu);
+
+
+menuItems.forEach( function(menuItem) {
+    menuItem.addEventListener('click', toggleMenu);
+} )
+
+
+
 // Fonction pour afficher le menu hamburger sur les versions mobiles et tablettes
 function showHamburgerMenu() {
     // Code pour afficher le menu hamburger
