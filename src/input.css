@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.card-hover-effect:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    scale: 1.02;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.begin-button-hover-effect:hover {
+    background: #EA580C;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.demo-button-hover-effect:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.subscribe-button-hover-effect:hover {
+    background: #3F3F46;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.scale:hover {
+    scale: 1.20;
+    transition: all 0.5s ease-in-out;
+}

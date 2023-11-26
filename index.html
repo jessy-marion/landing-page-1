@@ -13,14 +13,22 @@
   <body>
     <header class="shadow-md h-20 flex items-center justify-between mb-8">
       <img class="h-12 w-12 ml-4" src="./src/assets/img/logo.png" alt="logo" />
-      <img class="h-12 w-12 mr-4" src="./src/assets/img/menu.png" alt="menu" />
+      <img
+        class="h-12 w-12 mr-4 cursor-pointer"
+        src="./src/assets/img/menu.png"
+        alt="menu"
+      />
     </header>
     <main>
-      <section class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh]">
+      <section
+        class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh]"
+      >
         <h1 class="font-bold text-xl text-center mb-5 md:text-3xl">
           Une application innovante <br />
           qui décuplera vos connaissances
-          <br><span class="text-orange-500 text-2xl md:text-4xl">MUSICALES</span>
+          <br /><span class="text-orange-500 text-2xl md:text-4xl"
+            >MUSICALES</span
+          >
         </h1>
         <p class="text-center mb-5 md:text-xl md:mb-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
@@ -28,17 +36,19 @@
           reprehenderit sunt temporibus vero?
         </p>
         <div class="flex flex-col gap-1 md:gap-2 lg:flex-row lg:mb-8">
-        <button
-          class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2"
-        >
-          Commencer
-        </button>
-        <button class="w-32 font-bold rounded-md border p-1 shadow-md md:p-2">
-          Démo
-        </button>
-      </div>
+          <button
+            class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2 begin-button-hover-effect"
+          >
+            Commencer
+          </button>
+          <button
+            class="w-32 font-bold rounded-md border p-1 shadow-md md:p-2 demo-button-hover-effect"
+          >
+            Démo
+          </button>
+        </div>
         <img
-          class="h12 w-12 mt-10 cursor-pointer"
+          class="h12 w-12 mt-10 cursor-pointer scale"
           src="./src/assets/img/arrow.svg"
           alt="arrow"
         />
@@ -77,8 +87,10 @@
         </div>
       </section>
 
-      <section class="mb-8 lg:px-52 lg:py-12 ">
-        <div class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row lg:p-0">
+      <section class="lg:px-52 lg:py-12">
+        <div
+          class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row lg:p-0"
+        >
           <img
             class="md:h-auto md:w-[500px]"
             src="./src/assets/img/compose.png"
@@ -98,7 +110,7 @@
           </div>
         </div>
         <div
-          class=" p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row-reverse lg:p-0"
+          class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row-reverse lg:p-0"
         >
           <img
             class="md:h-auto md:w-[500px]"
@@ -149,83 +161,82 @@
         <p class="font-bold text-center mb-8 md:text-xl md:mb-16">
           Lorem, ipsum dolor sit amet consectetur.
         </p>
-        <div class="lg:flex  gap-12">
+        <div class="lg:flex gap-12">
           <div
-          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]" 
-        >
-          <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold md:text-4xl">Lite</h2>
-            <p class="text-xl md:text-2xl">THE BASICS</p>
-            <p class="text-2xl font-bold">
-              <span class="font-bold md:text-3xl">9€</span>/mois
-            </p>
-          </div>
-
-          <ul class="list-none text-center mb-8">
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
-          </ul>
-
-          <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
+            class="flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px] card-hover-effect"
           >
-            Subscribe
-          </button>
-        </div>
-        <div
-          class=" flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]""
-        >
-          <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold md:text-4xl">Standard</h2>
-            <p class="text-xl md:text-2xl">Go to the next level</p>
-            <p class="text-2xl font-bold">
-              <span class="font-bold md:text-3xl">29€</span>/mois
-            </p>
+            <div class="w-full pl-10 mb-8">
+              <h2 class="text-3xl font-bold md:text-4xl">Lite</h2>
+              <p class="text-xl md:text-2xl">THE BASICS</p>
+              <p class="text-2xl font-bold">
+                <span class="font-bold md:text-3xl">9€</span>/mois
+              </p>
+            </div>
+
+            <ul class="list-none text-center mb-8">
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
+            </ul>
+
+            <button
+              class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl subscribe-button-hover-effect"
+            >
+              Subscribe
+            </button>
           </div>
-
-          <ul class="list-none text-center mb-8">
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
-          </ul>
-
-          <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
+          <div
+            class="flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px] card-hover-effect"
           >
-            Subscribe
-          </button>
-        </div>
-        <div
-          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]""
-        >
-          <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold md:text-4xl">Suite</h2>
-            <p class="text-xl md:text-2xl">Best version</p>
-            <p class="text-2xl font-bold">
-              <span class="font-bold md:text-3xl">49€</span>/mois
-            </p>
+            <div class="w-full pl-10 mb-8">
+              <h2 class="text-3xl font-bold md:text-4xl">Standard</h2>
+              <p class="text-xl md:text-2xl">Go to the next level</p>
+              <p class="text-2xl font-bold">
+                <span class="font-bold md:text-3xl">29€</span>/mois
+              </p>
+            </div>
+
+            <ul class="list-none text-center mb-8">
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
+            </ul>
+
+            <button
+              class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl subscribe-button-hover-effect"
+            >
+              Subscribe
+            </button>
           </div>
-
-          <ul class="list-none text-center mb-8">
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
-          </ul>
-
-          <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
+          <div
+            class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px] card-hover-effect"
           >
-            Subscribe
-          </button>
+            <div class="w-full pl-10 mb-8">
+              <h2 class="text-3xl font-bold md:text-4xl">Suite</h2>
+              <p class="text-xl md:text-2xl">Best version</p>
+              <p class="text-2xl font-bold">
+                <span class="font-bold md:text-3xl">49€</span>/mois
+              </p>
+            </div>
+
+            <ul class="list-none text-center mb-8">
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            </ul>
+
+            <button
+              class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl subscribe-button-hover-effect"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
-        </div>
-        
       </section>
 
       <section>
         <div
-          class=" bg-amber-600 h-56 flex flex-col items-center justify-center md:h-80 md:p-16 lg:h-96"
+          class="bg-amber-600 h-56 flex flex-col items-center justify-center md:h-80 md:p-16 lg:h-96"
         >
           <h2 class="text-white text-2xl font-bold opacity-90 md:text-4xl">
             NOS PARTENAIRES
@@ -254,27 +265,36 @@
         class="bg-gray-800 h-56 flex flex-col justify-center items-center text-white"
       >
         <h3 class="font-bold mb-4 md:text-xl">Retrouvez nous ici</h3>
-        <div class="container flex justify-center items-center gap-2 mb-4 md:gap-3 md:mb-6 lg:gap-4">
-          <img class="h-auto w-10 md:w-14 " src="./src/assets/img/fb.svg" alt="fb" />
+        <div
+          class="container flex justify-center items-center gap-2 mb-4 md:gap-3 md:mb-6 lg:gap-4"
+        >
           <img
-            class="h-auto w-10 md:w-14"
+            class="h-auto w-10 md:w-14 cursor-pointer scale"
+            src="./src/assets/img/fb.svg"
+            alt="fb"
+          />
+          <img
+            class="h-auto w-10 md:w-14 cursor-pointer scale"
             src="./src/assets/img/instagram.svg"
             alt="instagram"
           />
           <img
-            class="h-auto w-10 md:w-14"
+            class="h-auto w-10 md:w-14 cursor-pointer scale"
             src="./src/assets/img/githubpetitlogo.svg"
             alt="github"
           />
           <img
-            class="h-auto w-10 md:w-14"
+            class="h-auto w-10 md:w-14 cursor-pointer scale"
             src="./src/assets/img/twitter.svg"
             alt="twitter"
           />
         </div>
         <div class="w-32 border-white border-b-2 mb-2 md:w-40 md:mb-6"></div>
-        <p class="text-xs md:text-sm">© 2023 Jessy Marion, TOUS DROITS RÉSERVÉS</p>
+        <p class="text-xs md:text-sm">
+          © 2023 Jessy Marion, TOUS DROITS RÉSERVÉS
+        </p>
       </footer>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>

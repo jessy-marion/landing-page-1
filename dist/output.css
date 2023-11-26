@@ -696,14 +696,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -850,6 +842,34 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.card-hover-effect:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  scale: 1.02;
+  transition: all 0.3s ease-in-out;
+}
+
+.begin-button-hover-effect:hover {
+  background: #EA580C;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.demo-button-hover-effect:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe-button-hover-effect:hover {
+  background: #3F3F46;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scale:hover {
+  scale: 1.20;
+  transition: all 0.5s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .md\:mb-16 {
     margin-bottom: 4rem;
@@ -895,32 +915,12 @@ video {
     width: 16rem;
   }
 
-  .md\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .md\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .md\:w-\[365px\] {
-    width: 365px;
-  }
-
   .md\:w-\[350px\] {
     width: 350px;
   }
 
-  .md\:min-w-\[400px\] {
-    min-width: 400px;
-  }
-
-  .md\:min-w-\[4px\] {
-    min-width: 4px;
-  }
-
-  .md\:min-w-\[365px\] {
-    min-width: 365px;
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:flex-col {
