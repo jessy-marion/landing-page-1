@@ -11,108 +11,128 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <header class="shadow-md h-20 flex items-center justify-between">
+    <header class="shadow-md h-20 flex items-center justify-between mb-8">
       <img class="h-12 w-12 ml-4" src="./src/assets/img/logo.png" alt="logo" />
       <img class="h-12 w-12 mr-4" src="./src/assets/img/menu.png" alt="menu" />
     </header>
     <main>
-      <section class="flex flex-col items-center justify-center p-16">
-        <h1 class="font-bold text-2xl text-center mb-5">
-          Une application innovante qui décuplera vos connaissances MUSICALES
+      <section class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh]">
+        <h1 class="font-bold text-xl text-center mb-5 md:text-3xl">
+          Une application innovante <br />
+          qui décuplera vos connaissances
+          <br><span class="text-orange-500 text-2xl md:text-4xl">MUSICALES</span>
         </h1>
-        <p class="text-center mb-5">
+        <p class="text-center mb-5 md:text-xl md:mb-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
           laborum libero necessitatibus nihil nostrum pariatur quidem
           reprehenderit sunt temporibus vero?
         </p>
+        <div class="flex flex-col gap-1 md:gap-2 lg:flex-row lg:mb-8">
         <button
-          class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 mb-2 shadow-md"
+          class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2"
         >
           Commencer
         </button>
-        <button class="w-32 font-bold rounded-md border p-1 shadow-md">
+        <button class="w-32 font-bold rounded-md border p-1 shadow-md md:p-2">
           Démo
         </button>
+      </div>
         <img
-          class="h12 w-12 mt-10"
+          class="h12 w-12 mt-10 cursor-pointer"
           src="./src/assets/img/arrow.svg"
           alt="arrow"
         />
       </section>
 
-      <section>
+      <section class="flex flex-col lg:flex-row">
         <img
-          class="h-56 object-cover"
+          class="h-56 w-full object-cover md:h-80 lg:flex-1 lg:w-0 lg:h-[100vh]"
           src="./src/assets/img/picture.png"
           alt=""
         />
         <div
-          class="container text-white h-56 w-full bg-gradient-to-r from-amber-500 to-amber-300 p-8"
+          class="text-white h-56 w-full bg-gradient-to-r from-amber-500 to-amber-300 p-4 md:h-80 md:flex md:flex-col md:justify-center md:items-center lg:flex-1 lg:w-0 lg:h-[100vh]"
         >
-          <h2 class="font-bold text-2xl text-center">
+          <h2 class="font-bold text-2xl text-center md:text-4xl">
             Plus de 1000000 utilisateurs
           </h2>
-          <p class="text-center">
+          <p class="text-center text-sm md:text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit,
             veritatis.
           </p>
-          <div class="flex items-center justify-around mt-8">
+          <div class="flex items-center justify-around mt-8 md:gap-10">
             <div>
-              <h3 class="font-bold text-2xl">1000K+</h3>
-              <p>Morceaux</p>
+              <h3 class="font-bold text-2xl md:text-3xl">1000K+</h3>
+              <p class="md:text-xl">Morceaux</p>
             </div>
             <div>
-              <h3 class="font-bold text-2xl">1000K+</h3>
-              <p>Morceaux</p>
+              <h3 class="font-bold text-2xl md:text-3xl">IA</h3>
+              <p class="md:text-xl">Disponible</p>
             </div>
             <div>
-              <h3 class="font-bold text-2xl">1000K+</h3>
-              <p>Morceaux</p>
+              <h3 class="font-bold text-2xl md:text-3xl">4.5/5</h3>
+              <p class="md:text-xl">Note Store</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="container p-4 flex flex-col justify-center">
-          <img src="./src/assets/img/compose.png" alt="image-compose" />
+      <section class="mb-8 lg:px-52 lg:py-12 ">
+        <div class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row lg:p-0">
+          <img
+            class="md:h-auto md:w-[500px]"
+            src="./src/assets/img/compose.png"
+            alt="image-compose"
+          />
           <div
-            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md"
+            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md md:p-8 lg:p-16 lg:min-w-[500px]"
           >
-            <h2 class="font-bold text-2xl text-center mb-3">
+            <h2 class="font-bold text-xl text-center mb-3 md:text-3xl">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p>
+            <p class="md:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quae voluptates voluptatem
               consequatur. Lorem ipsum dolor sit amet.
             </p>
           </div>
         </div>
-        <div class="container p-4 flex flex-col justify-center">
-          <img src="./src/assets/img/more-music.png" alt="image-compose" />
+        <div
+          class=" p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row-reverse lg:p-0"
+        >
+          <img
+            class="md:h-auto md:w-[500px]"
+            src="./src/assets/img/more-music.png"
+            alt="image-compose"
+          />
           <div
-            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md"
+            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md md:p-8 lg:p-16 lg:min-w-[500px]"
           >
-            <h2 class="font-bold text-2xl text-center mb-3">
+            <h2 class="font-bold text-xl text-center mb-3 md:text-3xl">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p>
+            <p class="md:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quae voluptates voluptatem
               consequatur. Lorem ipsum dolor sit amet.
             </p>
           </div>
         </div>
-        <div class="container p-4 flex flex-col justify-center">
-          <img src="./src/assets/img/program.png" alt="image-compose" />
+        <div
+          class="p-4 flex flex-col justify-center items-center md:p-16 lg:flex-row lg:p-0"
+        >
+          <img
+            class="md:h-auto md:w-[500px]"
+            src="./src/assets/img/program.png"
+            alt="image-compose"
+          />
           <div
-            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md"
+            class="bg-gradient-to-r from-amber-500 to-amber-300 text-white rounded-3xl p-4 shadow-md md:p-8 lg:p-16 lg:min-w-[500px]"
           >
-            <h2 class="font-bold text-2xl text-center mb-3">
+            <h2 class="font-bold text-xl text-center mb-3 md:text-3xl">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p>
+            <p class="md:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quae voluptates voluptatem
               consequatur. Lorem ipsum dolor sit amet.
@@ -121,99 +141,108 @@
         </div>
       </section>
 
-      <section class="flex flex-col items-center justify-center p-4 mb-8">
-        <h3 class="text-2xl font-bold mb-4">Prix</h3>
-        <div class="w-52 border-black border-b-2 mb-2"></div>
-        <p class="font-bold text-center mb-8">
+      <section
+        class="flex flex-col items-center justify-center p-4 mb-8 md:p-16 lg:h-[100vh]"
+      >
+        <h3 class="text-2xl font-bold mb-4 md:text-3xl">Prix</h3>
+        <div class="w-52 border-black border-b-2 mb-2 md:w-64"></div>
+        <p class="font-bold text-center mb-8 md:text-xl md:mb-16">
           Lorem, ipsum dolor sit amet consectetur.
         </p>
-        <div
-          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded"
+        <div class="lg:flex  gap-12">
+          <div
+          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]" 
         >
           <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold">Lite</h2>
-            <p class="text-xl">THE BASICS</p>
+            <h2 class="text-3xl font-bold md:text-4xl">Lite</h2>
+            <p class="text-xl md:text-2xl">THE BASICS</p>
             <p class="text-2xl font-bold">
-              <span class="font-bold">9€</span>/mois
+              <span class="font-bold md:text-3xl">9€</span>/mois
             </p>
           </div>
 
           <ul class="list-none text-center mb-8">
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
           </ul>
 
           <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8"
+            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
           >
             Subscribe
           </button>
         </div>
         <div
-          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded"
+          class=" flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]""
         >
           <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold">Standard</h2>
-            <p class="text-xl">Go to the next level</p>
+            <h2 class="text-3xl font-bold md:text-4xl">Standard</h2>
+            <p class="text-xl md:text-2xl">Go to the next level</p>
             <p class="text-2xl font-bold">
-              <span class="font-bold">29€</span>/mois
+              <span class="font-bold md:text-3xl">29€</span>/mois
             </p>
           </div>
 
           <ul class="list-none text-center mb-8">
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">❌ Lorem ipsum dolor sit amet.</li>
           </ul>
 
           <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8"
+            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
           >
             Subscribe
           </button>
         </div>
         <div
-          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded"
+          class="container flex flex-col items-center justify-center border-black border-2 mb-16 p-4 rounded md:w-[350px]""
         >
           <div class="w-full pl-10 mb-8">
-            <h2 class="text-3xl font-bold">Suite</h2>
-            <p class="text-xl">Best version</p>
+            <h2 class="text-3xl font-bold md:text-4xl">Suite</h2>
+            <p class="text-xl md:text-2xl">Best version</p>
             <p class="text-2xl font-bold">
-              <span class="font-bold">49€</span>/mois
+              <span class="font-bold md:text-3xl">49€</span>/mois
             </p>
           </div>
 
           <ul class="list-none text-center mb-8">
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
-            <li class="mb-8">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
+            <li class="mb-8 md:text-xl">✔ Lorem ipsum dolor sit amet.</li>
           </ul>
 
           <button
-            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8"
+            class="w-32 p-1 bg-gray-800 text-white items-center rounded mb-8 md:p-2 md:text-xl"
           >
             Subscribe
           </button>
         </div>
+        </div>
+        
       </section>
 
       <section>
         <div
-          class="container bg-amber-600 h-56 flex flex-col items-center justify-center"
+          class=" bg-amber-600 h-56 flex flex-col items-center justify-center md:h-80 md:p-16 lg:h-96"
         >
-          <h2 class="text-white text-2xl font-bold opacity-90">
+          <h2 class="text-white text-2xl font-bold opacity-90 md:text-4xl">
             NOS PARTENAIRES
           </h2>
           <div class="container mt-8 flex items-center justify-around">
             <img
-              class="h-auto w-14"
+              class="h-auto w-14 filter invert md:w-20"
               src="src/assets/img/apple-logo.png"
               alt="apple"
             />
-            <img class="h-auto w-20" src="src/assets/img/IBM.png" alt="IBM" />
             <img
-              class="h-auto w-20"
+              class="h-auto w-20 filter invert md:w-36"
+              src="src/assets/img/IBM.png"
+              alt="IBM"
+            />
+            <img
+              class="h-auto w-20 filter invert md:w-36"
               src="src/assets/img/amazon-logo.png"
               alt="amazon"
             />
@@ -221,31 +250,31 @@
         </div>
       </section>
 
-      <section
+      <footer
         class="bg-gray-800 h-56 flex flex-col justify-center items-center text-white"
       >
-        <h3 class="font-bold mb-4">Retrouvez nous ici</h3>
-        <div class="container flex justify-center items-center gap-2 mb-4">
-          <img class="h-auto w-10" src="./src/assets/img/fb.svg" alt="fb" />
+        <h3 class="font-bold mb-4 md:text-xl">Retrouvez nous ici</h3>
+        <div class="container flex justify-center items-center gap-2 mb-4 md:gap-3 md:mb-6 lg:gap-4">
+          <img class="h-auto w-10 md:w-14 " src="./src/assets/img/fb.svg" alt="fb" />
           <img
-            class="h-auto w-10"
+            class="h-auto w-10 md:w-14"
             src="./src/assets/img/instagram.svg"
             alt="instagram"
           />
           <img
-            class="h-auto w-10"
+            class="h-auto w-10 md:w-14"
             src="./src/assets/img/githubpetitlogo.svg"
             alt="github"
           />
           <img
-            class="h-auto w-10"
+            class="h-auto w-10 md:w-14"
             src="./src/assets/img/twitter.svg"
             alt="twitter"
           />
         </div>
-        <div class="w-32 border-white border-b-2 mb-2"></div>
-        <p class="text-xs">© 2023 Jessy Marion, TOUS DROITS RÉSERVÉS</p>
-      </section>
+        <div class="w-32 border-white border-b-2 mb-2 md:w-40 md:mb-6"></div>
+        <p class="text-xs md:text-sm">© 2023 Jessy Marion, TOUS DROITS RÉSERVÉS</p>
+      </footer>
     </main>
   </body>
 </html>
