@@ -41,39 +41,42 @@
     <main>
       <section
         id="accueil"
-        class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh] bg-[url('/src/assets/img/background.jpg')] object-cover filter"
+        class="flex items-center justify-center p-12 md:p-44 lg:h-[100vh] bg-[url('/src/assets/img/background.jpg')] object-cover bg-fixed"
       >
-        <h1 class="font-bold text-xl text-center text-wh mb-5 md:text-3xl">
-          Une application innovante <br />
-          qui décuplera vos connaissances
-          <br /><span class="text-orange-500 text-2xl md:text-4xl"
-            >MUSICALES</span
-          >
-        </h1>
-        <p class="text-center mb-5 md:text-xl md:mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-          laborum libero necessitatibus nihil nostrum pariatur quidem
-          reprehenderit sunt temporibus vero?
-        </p>
-        <div class="flex flex-col gap-1 md:gap-2 lg:flex-row lg:mb-8">
-          <button
-            class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2 begin-button-hover-effect"
-          >
-            <a href="#prix"> Commencer </a>
-          </button>
-          <button
-            class="w-32 bg-white font-bold rounded-md border p-1 shadow-md md:p-2 demo-button-hover-effect"
-          >
-            Démo
-          </button>
+        <div
+          class="flex flex-col items-center justify-center bg-white p-8 rounded lg:h-auto lg:w-[500px]"
+        >
+          <h1 class="font-bold text-xl text-center mb-5 md:text-3xl">
+            Une application innovante <br />
+            qui décuplera vos connaissances
+            <br /><span class="text-orange-500 text-2xl md:text-4xl"
+              >MUSICALES</span
+            >
+          </h1>
+          <p class="font-bold text-center mb-5 text-sm md:text-xl md:mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos laborum libero necessitatibus ?
+          </p>
+          <div class="flex flex-col gap-1 md:gap-2 lg:flex-row lg:mb-8">
+            <button
+              class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2 begin-button-hover-effect"
+            >
+              <a href="#prix"> Commencer </a>
+            </button>
+            <button
+              class="w-32 bg-white font-bold rounded-md border p-1 shadow-md md:p-2 demo-button-hover-effect"
+            >
+              Démo
+            </button>
+          </div>
+          <a href="#arrow">
+            <img
+              class="h12 w-12 mt-10 cursor-pointer scale"
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+            />
+          </a>
         </div>
-        <a href="#arrow">
-          <img
-            class="h12 w-12 mt-10 cursor-pointer scale"
-            src="./src/assets/img/arrow.svg"
-            alt="arrow"
-          />
-        </a>
       </section>
 
       <section id="arrow" class="flex flex-col lg:flex-row">
@@ -177,7 +180,7 @@
 
       <section
         id="prix"
-        class="flex flex-col items-center justify-center p-4 mb-8 md:p-16 lg:h-[100vh]"
+        class="flex flex-col items-center justify-center p-4 md:p-16 lg:h-[100vh]"
       >
         <h3 class="text-2xl font-bold mb-4 md:text-3xl">Prix</h3>
         <div class="w-52 border-black border-b-2 mb-2 md:w-64"></div>
