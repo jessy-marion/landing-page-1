@@ -12,12 +12,10 @@
   </head>
   <body>
     <header
-      class="sticky bg-white top-0 right-0 shadow-md h-20 w-auto flex items-center justify-between mb-8"
+      class="sticky bg-white top-0 right-0 shadow-md h-20 w-auto flex items-center justify-between"
     >
       <img class="h-12 w-12 ml-4" src="./src/assets/img/logo.png" alt="logo" />
-      <ul
-        class="menu flex flex-col items-center justify-start gap-4 text-xl font-bold"
-      >
+      <ul class="menu gap-8 text-xl font-bold">
         <li><a class="menuItem" href="#accueil">Accueil</a></li>
         <li><a class="menuItem" href="#informations">Informations</a></li>
         <li><a class="menuItem" href="#prix">Tarifs</a></li>
@@ -30,7 +28,7 @@
         </li>
       </ul>
       <img
-        class="h-12 w-12 mr-4 cursor-pointer menuIcon"
+        class="none h-12 w-12 mr-4 cursor-pointer menuIcon hidden"
         src="./src/assets/img/menu.png"
         alt="menu"
       />
@@ -43,9 +41,9 @@
     <main>
       <section
         id="accueil"
-        class="flex flex-col items-center justify-center mt-20 p-8 md:p-16 lg:p-44 lg:h-[90vh]"
+        class="flex flex-col items-center justify-center p-8 md:p-16 lg:p-44 lg:h-[90vh] bg-[url('/src/assets/img/background.jpg')] object-cover filter"
       >
-        <h1 class="font-bold text-xl text-center mb-5 md:text-3xl">
+        <h1 class="font-bold text-xl text-center text-wh mb-5 md:text-3xl">
           Une application innovante <br />
           qui décuplera vos connaissances
           <br /><span class="text-orange-500 text-2xl md:text-4xl"
@@ -61,22 +59,24 @@
           <button
             class="w-32 text-white font-bold rounded-md bg-orange-500 p-1 shadow-md md:p-2 begin-button-hover-effect"
           >
-            Commencer
+            <a href="#prix"> Commencer </a>
           </button>
           <button
-            class="w-32 font-bold rounded-md border p-1 shadow-md md:p-2 demo-button-hover-effect"
+            class="w-32 bg-white font-bold rounded-md border p-1 shadow-md md:p-2 demo-button-hover-effect"
           >
             Démo
           </button>
         </div>
-        <img
-          class="h12 w-12 mt-10 cursor-pointer scale"
-          src="./src/assets/img/arrow.svg"
-          alt="arrow"
-        />
+        <a href="#arrow">
+          <img
+            class="h12 w-12 mt-10 cursor-pointer scale"
+            src="./src/assets/img/arrow.svg"
+            alt="arrow"
+          />
+        </a>
       </section>
 
-      <section class="flex flex-col lg:flex-row">
+      <section id="arrow" class="flex flex-col lg:flex-row">
         <img
           class="h-56 w-full object-cover md:h-80 lg:flex-1 lg:w-0 lg:h-[100vh]"
           src="./src/assets/img/picture.png"
