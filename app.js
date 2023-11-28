@@ -41,6 +41,7 @@ function showHamburgerMenu() {
 // Fonction pour afficher la navbar sur les versions desktop
 function showNavbar() {
      menuIcon.style.display = "none";
+     closeIcon.style.display = "none";
      menu.classList.remove("invisible");
      menu.classList.remove("menu");
      menu.classList.add("navBar");

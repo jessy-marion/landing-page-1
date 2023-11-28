@@ -620,6 +620,18 @@ video {
   margin-top: 2rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -784,6 +796,10 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/src\/assets\/img\/background\.avif\'\)\] {
+  background-image: url('/src/assets/img/background.avif');
 }
 
 .from-amber-500 {
@@ -956,6 +972,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
   .md\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -968,8 +988,16 @@ section {
     margin-bottom: 2rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-80 {
